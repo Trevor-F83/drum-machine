@@ -1,4 +1,99 @@
 body {
     background-color: aquamarine;
+    font-family: bangers;
+    font-size: 66px;
+}
 
+.container {
+    display: flex;
+    /* flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-items: center; */
+    grid-column-end: auto;
+    grid-column-gap: 50px;
+}
+
+/* .item {
+    flex-basis: auto;
+} */
+#snare {
+    border: 10px solid black;
+    border-radius: 4px;
+    width: 69px;
+    text-align: center;
+    margin: 6px;
+
+}
+
+#closed_high_hat {
+    border: 10px solid black;
+    border-radius: 4px;
+    width: 69px;
+    text-align: center;
+    margin: 6px;
+}
+
+#cowbell {
+    border: 10px solid black;
+    border-radius: 4px;
+    width: 69px;
+    text-align: center;
+    margin: 6px;
+}
+
+#crash {
+    border: 10px solid black;
+    border-radius: 4px;
+    width: 69px;
+    text-align: center;
+    margin: 6px;
+}
+
+#floor_tom {
+    border: 10px solid black;
+    border-radius: 4px;
+    width: 69px;
+    text-align: center;
+    margin: 6px;
+}
+
+#kick {
+    border:10px solid black;
+    border-radius: 4px;
+    width: 69px;
+    text-align: center;
+    margin: 6px;
+}
+
+#low_tom {
+    border: 10px solid black;
+    border-radius: 4px;
+    width: 69px;
+    text-align: center;
+    margin: 6px;
+}
+
+#open_high {
+    border: 10px solid black;
+    border-radius: 4px;
+    width: 69px;
+    text-align: center;
+    margin: 6px;
+}
+
+#ride {
+    border: 10px solid black;
+    border-radius: 4px;
+    width: 69px;
+    text-align: center;
+    margin: 6px;
+}
+
+#tom_high {
+    border: 10px solid black;
+    border-radius: 4px;
+    width: 69px;
+    text-align: center;
+    margin: 6px;
 }
