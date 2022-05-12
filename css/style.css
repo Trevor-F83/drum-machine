@@ -4,6 +4,13 @@ body {
     font-size: 66px;
 }
 
+p {
+    font-family: Tapestry;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+}
+
 .container {
     display: flex;
     grid-column-end: auto;

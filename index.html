@@ -10,6 +10,7 @@
         </script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="#">
     <title>Document</title>
 </head>
@@ -32,7 +33,7 @@
 
     </main>
 
-    <!-- <p>All alone or in two's <br>
+    <p>All alone or in two's <br>
         The ones who really love you<br>
         Walk up and down outside the wall<br>
         Some hand in hand<br>
@@ -42,10 +43,11 @@
         And when they've given you their all<br>
         Some stagger and fall<br>
         After all it's not easy<br>
-        Banging your heart against some mad buggers wall<br>
+        Banging your heart against some mad buggers wall<br><br>
         Source: <a href='https://www.musixmatch.com/lyrics/Roger-Waters/Outside-the-Wall'>Musixmatch</a></a><br>
         Songwriters: Roger Waters<br>
-        Outside the Wall lyrics © Roger Waters Music Overseas Ltd</p> -->
+
+        Outside the Wall lyrics © Roger Waters Music Overseas Ltd</p>
     <audio id="audio" control style="display:none">
         <source src="./audio/snare.wav" type="audio/wav">
         <source src="./audio/closed_high_hat.wav" type="audio/wav">
@@ -63,31 +65,9 @@
             <img alt="" id="unsplashImage" />
         </a>
     </div>
-    <p class="imageDetails">Photo by <a id="creator" href="#">NAME</a> on <a
-            href="http://www.unsplash.com">Unsplash</a>!</p>
-    <!-- <script>
-        let clientID = "AsYq44X9bUjvLXG4Um1uB53gCwIFh_KKOoGxPDr_ojs";
-        let endpoint = `https://api.unsplash.com/photos/random/?client_id=${clientID}`;
-        let imageElement = document.querySelector('unsplashImage');
-        let imageLink = document.querySelector('#imageLink');
-        let creatot = document.querySelector('creator');
+    <!-- <p class="imageDetails">Photo by <a id="creator" href="#">NAME</a> on <a
+            href="http://www.unsplash.com">Unsplash</a>!</p> -->
 
-
-
-        fetch(endpoint)
-            .then((response) => response.json())
-            .then(function (jsonData) {
-                imageElement.src = jsonData.urls.regular;
-                imageLink.setAttribute('href', jsonData.links.html);
-
-                creator.innerText = jsonData.user.name;
-                creator.setAtttribute('href', jsonData.user.portfolio_url);
-            })
-            .catch(function (error) {
-                console.log("Error: " + error);
-            })
-
-    </script> -->
     <script src="./js/script.js" defer></script>
 </body>
 

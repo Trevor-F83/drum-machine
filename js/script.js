@@ -1,27 +1,47 @@
-// const URL = 'https://api.unsplash.com/photos/?client_id=AsYq44X9bUjvLXG4Um1uB53gCwIFh_KKOoGxPDr_ojs=s/photos/music'
+const URL = 'https://api.unsplash.com/photos/?client_id=AsYq44X9bUjvLXG4Um1uB53gCwIFh_KKOoGxPDr_ojs=s/photos/music'
+console.log(URL)
+const numItemsToGenerate = 1;
 
-// const numItemsToGenerate = 1;
-
-// function renderItem() {
-//     fetch('https://source.unsplash.com/s/photos/music').then((response) => {
-//         let item = document.createElement('div');
-//         item.classList.add('item');
-//         item.innerHTML = `<img class='music-image' src='${data.img}'/>`
-//         document.body.appendChild(item);
-//     })
-// }
-
-
-//from the lesson day 2 AJAX
-function handleGetDate(){
-
-    $.ajax(URL).then(function(data) {
-        console.log('img data is ready')
-        $data.img(data.img)
-        $('main').append(`<img src='${data.img}'/>`)
-        console.log(error)
+function renderItem() {
+    fetch('https://source.unsplash.com/s/photos/music').then((response) => {
+        let item = document.createElement('div');
+        item.classList.add('item');
+        item.innerHTML = `<img class='music-image' src='${data.img}'/>`
+        document.body.appendChild(item);
     })
 }
+// (function($){
+// var albumID = 'iQdfU9G'
+// var albumAPI = 'https://api.imgur.com/gallery/iQdfU9G'
+
+// $.ajax({
+//     url: albumAPI,
+//     headers: {
+//         'Authorization' : 'Client-ID f14fe50103e610a'
+//     },
+//     error: function(){console.log(Error);}
+// });
+// })(jQuery);
+
+
+
+
+
+
+
+
+// const $image = $('image');
+// console.log(URL)
+// //from the lesson day 2 AJAX
+// function handleGetDate(){
+
+//     $.ajax(URL).then(function(data) {
+//         console.log('image data is ready')
+//         $data.image(data.image)
+//         $('main').append(`<img src='${data.image}'/>`)
+//         console.log(error)
+//     })
+// }
 
 
 
