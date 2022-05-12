@@ -24,8 +24,7 @@ const URL = 'https://api.unsplash.com/photos/?client_id=AsYq44X9bUjvLXG4Um1uB53g
 $.ajax(URL).then(function(image) { //calling the function to access url
     console.log('image is ready') //making sure the above is correct. acts like an eventListener
     console.log(image);
-    
- }, function(error) {
+}, function(error) {
      console.log("something went wrong")
  })
 
