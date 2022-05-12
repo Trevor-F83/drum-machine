@@ -1,27 +1,68 @@
-const URL = 'https://api.unsplash.com/photos/?client_id=AsYq44X9bUjvLXG4Um1uB53gCwIFh_KKOoGxPDr_ojs=s/photos/music'
-console.log(URL)
 const numItemsToGenerate = 1;
 
-function renderItem() {
-    fetch('https://source.unsplash.com/s/photos/music').then((response) => {
-        let item = document.createElement('div');
-        item.classList.add('item');
-        item.innerHTML = `<img class='music-image' src='${data.img}'/>`
-        document.body.appendChild(item);
-    })
-}
+
+// $(document).ready(function() {
+    //     let endpoint = 'https://api.unsplash.com/'
+//     let apiKey = 'AsYq44X9bUjvLXG4Um1uB53gCwIFh_KKOoGxPDr_ojs&query'
+
+//     $(".content a").each(function(index, element) {
+    
+    //         $.ajax({
+//             url: endpoint + "$key=" + apiKey + " &q=" + $(this).text(),
+//             contentType: "application/json",
+//             dataType: 'json',
+//             success: function(result){
+//                console.log(result);
+//             }
+//         })
+//     })
+// });
+
+
+const URL = 'https://api.unsplash.com/photos/?client_id=AsYq44X9bUjvLXG4Um1uB53gCwIFh_KKOoGxPDr_ojs&query="rPOmLGwai2w"' // creates element "url" with client id (access key) added
+
+$.ajax(URL).then(function(image) { //calling the function to access url
+    console.log('image is ready') //making sure the above is correct. acts like an eventListener
+    console.log(image);
+    
+ }, function(error) {
+     console.log("something went wrong")
+ })
+
+
+
+
+
+
+// function renderItem() {
+//     fetch(URL).then((response) => {
+//         // let item = document.createElement('div');
+//         // item.classList.add('item');
+//         // item.innerHTML = `<img class='music-image' src='${data.img}'/>`
+//         // document.body.appendChild(item);
+//         console.log(response.json())
+//     }).then((data) => {
+//         console.log(data)
+//     })
+// }
+// renderItem()
 // (function($){
 // var albumID = 'iQdfU9G'
-// var albumAPI = 'https://api.imgur.com/gallery/iQdfU9G'
+// var albumAPI = 'https://api.imgur.com/3/account/me/images/'
 
 // $.ajax({
 //     url: albumAPI,
 //     headers: {
-//         'Authorization' : 'Client-ID f14fe50103e610a'
+//         'Authorization' : 'Bearer 	f93a14b880009b7'
 //     },
 //     error: function(){console.log(Error);}
 // });
 // })(jQuery);
+
+
+
+
+
 
 
 
