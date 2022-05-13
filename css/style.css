@@ -1,5 +1,5 @@
 body {
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
     font-family: bangers;
     font-size: 66px;
 }
@@ -13,13 +13,12 @@ p {
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column-end: auto;
     grid-column-gap: 50px;
 }
 
-/* .item {
-    flex-basis: auto;
-} */
 #snare {
     border: 10px solid black;
     border-radius: 4px;

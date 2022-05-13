@@ -2,12 +2,12 @@ const numItemsToGenerate = 1;
 
 
 // $(document).ready(function() {
-    //     let endpoint = 'https://api.unsplash.com/'
+//     let endpoint = 'https://api.unsplash.com/'
 //     let apiKey = 'AsYq44X9bUjvLXG4Um1uB53gCwIFh_KKOoGxPDr_ojs&query'
 
 //     $(".content a").each(function(index, element) {
-    
-    //         $.ajax({
+
+//         $.ajax({
 //             url: endpoint + "$key=" + apiKey + " &q=" + $(this).text(),
 //             contentType: "application/json",
 //             dataType: 'json',
@@ -19,14 +19,37 @@ const numItemsToGenerate = 1;
 // });
 
 
-const URL = 'https://api.unsplash.com/photos/?client_id=AsYq44X9bUjvLXG4Um1uB53gCwIFh_KKOoGxPDr_ojs&query="rPOmLGwai2w"' // creates element "url" with client id (access key) added
+const imageURL = 'https://images.unsplash.com/photo-1652345408109-84e1f1ca130f?client_id=AsYq44X9bUjvLXG4Um1uB53gCwIFh_KKOoGxPDr_ojs' // creates element "url" with client id (access key) added
 
-$.ajax(URL).then(function(image) { //calling the function to access url
-    console.log('image is ready') //making sure the above is correct. acts like an eventListener
-    console.log(image);
-}, function(error) {
-     console.log("something went wrong")
- })
+
+//element references
+const $image = $('#image');
+
+$.ajax({
+    url: imageURL,
+    contentType: 'image/jpg',
+   cache: false,
+   xhrFields: {
+       responseType: 'blob'
+   },
+    success: function (image) {
+        // $image.src="data:image/png;base64," + btoa(image)
+        console.log("image is READY!")
+        var url  = window.URL || window.webkitURL;
+        document.getElementById("image").src = url.createObjectURL(image);  
+      }
+});
+
+
+// $.ajax(imageURL).then(function(image) { //calling the function to access url
+//     console.log('image is ready')
+//     const site = window.URL || window.webkitURL;
+//     const src = site.createObjectURL(image); //making sure the above is correct. acts like an eventListener
+//     $image.attr("src", "data:image/png;base64," + image)
+// }, function(error) {
+//      console.log("something went wrong")
+//  })
+
 
 
 
