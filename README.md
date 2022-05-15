@@ -1,4 +1,4 @@
-<h1 align="center">Drum Machine</h1>
+<h1 align="center">ECHO Sampler 100</h1>
 
 <p align="center">A simple drum machine to have fun with.</p>
 
@@ -23,4 +23,4 @@
   <p align="center">Garett Stephenson</p>
   
   <h2 align="center">Future Enhancments</h2>
-  <p align="center">Implement Web Audio API and make this a full on sampler with the ability to create your own sounds from scratch. It will have a screen with a wave function. You will be able to manipulate that wave to create your sounds. There will also be pan, gain and other knobs to further customize your sounds.</p>
+  <p align="center">In future iterations of ECHO Sampler, we intend to implement Web Audio API in order to make this a full on sampler with the ability to create your own sounds from scratch. It will have a screen with manipulative wave functionality. We will add three-band eq, pan, gain, channel eq and other knobs to further customize your sounds. There will be touch screen capabilities for tablets and laptops. We imagine bringing the touchpad sampler into the new age as well as bringin you loop software for you to build upon. To more solidify our position in the sound engineering space and to make ECHO a more user freindly instrument, we intend to work closely with industry leading producers to bring you pre programmed sound packages. Stay tuned to see the future of sound engineering and beat production.</p>
