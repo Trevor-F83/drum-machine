@@ -1,14 +1,19 @@
-# drum-machine
-GA Project 1
+<h1 align="center">Drum Machine</h1>
+
+<p align="center">A simple drum machine to have fun with.</p>
+
+To enjoy my web based drum machine, just click <a href="https://627ee772abdd7a27e7f478b1--statuesque-muffin-6179d9.netlify.app/">here!</a>
+
+[REPO](https://github.com/Trevor-F83/drum-machine/<drum-machine> "<drum-machine> Repo")
 
 
-<Drum Machine>
   
   Technology used:
   JavaScript
   HTML5
   CSS3
   AJAX
+  jQuery
   
   Getting Started:
   
