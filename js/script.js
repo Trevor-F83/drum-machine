@@ -20,6 +20,10 @@ $.ajax({
         document.getElementById("image").src = url.createObjectURL(image);  
       }
 });
+function logConsole() {
+console.log("https://github.com/Trevor-F83/drum-machine")
+}
+
 
 //defines keydown event
 document.addEventListener('keydown', function (e) {

@@ -15,6 +15,10 @@
 </head>
 
 <body>
+    <p>The full URL of the ECHO 100 is: <br><span id="link"></span></p>
+<script>document.getElementById("link").innerHTML = document.URL</script>
+    <p align="center">To acces my GitHub Repo, click the REPO button, open your dev tools and check out the console!!!!</p>
+    <button id="btn" type="button" onclick="logConsole()">REPO</button>
     <main>
         <div class="container">
             <div id="snare" src="./audio/snare.wav">Q</div>
@@ -28,6 +32,7 @@
             <div id="ride" src="./audio/ride.wav">O</div>
             <div id="tom_high" src="./audio/tom_high.wav">P</div>
         </div>
+
         
         <img id="image" style="position: absolute; width: 100vw; height: 100vh">
     </main>
